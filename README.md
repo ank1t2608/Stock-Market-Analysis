@@ -1,48 +1,41 @@
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Status](https://img.shields.io/badge/Project-Completed-green)
-# 📊 Stock Market Trend & Volatility Analysis with Prediction
+# 📊 Stock Market Trend, Volatility & Prediction Analysis
 
 ## 📌 Overview
 
-This project focuses on analyzing stock market data to understand **price trends, volatility, and relationships between multiple stocks**, and to build a **machine learning model for price prediction**.
+This project performs an in-depth analysis of stock market data to understand **price trends, volatility, risk behavior, and inter-stock relationships**, along with building a **machine learning model for stock price prediction**.
 
-The analysis is performed on major stocks including **RELIANCE, TCS, and NIFTY 50 index**, providing insights into both individual stock behavior and overall market performance.
+The analysis is conducted on major Indian stocks including **RELIANCE, TCS, and NIFTY 50 index**, providing both micro (stock-level) and macro (market-level) insights.
 
 ---
 
 ## 🎯 Objectives
 
 * Analyze stock price trends over time
-* Measure volatility and risk using statistical methods
-* Study correlation between multiple stocks
-* Build a predictive model for future stock prices
+* Measure volatility and financial risk
+* Understand relationships between multiple stocks
+* Evaluate return distributions and cumulative growth
+* Build a predictive model for next-day stock prices
 * Apply technical indicators like RSI for decision-making
 
 ---
 
 ## 📂 Dataset
 
-* Source: Yahoo Finance
-
-* Stocks Used:
-
-  * RELIANCE
-  * TCS
-  * NIFTY 50 (^NSEI)
-
-* Features:
-
-  * Open, High, Low, Close, Volume
+* **Source:** Yahoo Finance
+* **Stocks Used:** RELIANCE, TCS, NIFTY 50 (^NSEI)
+* **Features:** Open, High, Low, Close, Volume
 
 ---
 
 ## ⚙️ Technologies & Tools Used
 
 * **Python**
-* **Pandas, NumPy** → Data manipulation
-* **Matplotlib, Seaborn** → Data visualization
-* **Scikit-learn** → Machine learning
-* **Jupyter Notebook** → Development environment
+* **Pandas, NumPy** → Data processing
+* **Matplotlib, Seaborn** → Visualization
+* **Scikit-learn** → Machine Learning
+* **Jupyter Notebook** → Development
 
 ---
 
@@ -50,9 +43,9 @@ The analysis is performed on major stocks including **RELIANCE, TCS, and NIFTY 5
 
 ### 🧹 Data Cleaning
 
-* Removed unnecessary rows and structured dataset
+* Removed unnecessary rows and formatted dataset
+* Converted date to datetime format
 * Checked for missing values and duplicates
-* Converted date column to datetime format
 
 ---
 
@@ -67,14 +60,30 @@ The analysis is performed on major stocks including **RELIANCE, TCS, and NIFTY 5
 ### 📈 Trend Analysis
 
 * Normalized stock prices (Base = 100)
-* Compared performance of multiple stocks
+* Compared performance across multiple stocks
 
 ---
 
-### 📉 Volatility Analysis
+### 📉 Returns & Volatility Analysis
 
-* Calculated standard deviation of returns
-* Analyzed rolling volatility (20-day window)
+* Calculated daily returns
+* Measured risk using standard deviation
+* Analyzed rolling volatility trends
+
+---
+
+### 📦 Returns Distribution ⭐
+
+* Visualized distribution of daily returns
+* Identified spread, skewness, and extreme values
+* Helped understand risk behavior
+
+---
+
+### 📊 Cumulative Returns ⭐
+
+* Calculated total growth of stocks over time
+* Compared long-term investment performance
 
 ---
 
@@ -88,7 +97,14 @@ The analysis is performed on major stocks including **RELIANCE, TCS, and NIFTY 5
 ### 🔗 Correlation Analysis
 
 * Generated correlation heatmap
-* Studied relationships between stocks
+* Analyzed relationships between stocks
+
+---
+
+### 📊 Scatter Plot Analysis ⭐
+
+* Visualized relationship between stock returns
+* Identified correlation patterns and diversification opportunities
 
 ---
 
@@ -102,23 +118,27 @@ The analysis is performed on major stocks including **RELIANCE, TCS, and NIFTY 5
 
 ## 📊 Key Insights
 
-* TCS showed stronger growth compared to RELIANCE
+* TCS demonstrated stronger growth compared to RELIANCE
 * NIFTY index exhibited lower volatility than individual stocks
+* Daily return distribution revealed varying risk levels
 * Strong positive correlation observed between stocks and market index
-* RSI helped identify potential buy/sell signals
+* RSI helped identify potential buy/sell opportunities
+* Scatter plots confirmed relationships between stock returns
 
 ---
 
 ## 🚀 Future Enhancements
 
 * Implement LSTM deep learning model
-* Add real-time stock data integration
+* Integrate real-time stock data
 * Build interactive dashboard using Streamlit
-* Deploy project as a web application
+* Deploy as a web application
 
 ---
+
 ## 👨‍💻 Project Developer
-Ankit Pandey  
+
+**Ankit Pandey**
 🔗 LinkedIn: https://www.linkedin.com/in/ankit2608/
 ---
 
@@ -136,4 +156,4 @@ Ankit Pandey
 
 ## 📌 Conclusion
 
-This project demonstrates a complete **end-to-end data analytics workflow**, including data preprocessing, visualization, statistical analysis, and machine learning, applied to real-world financial data.
+This project demonstrates a complete **end-to-end financial data analytics pipeline**, combining statistical analysis, visualization, and machine learning to extract meaningful insights from stock market data.
